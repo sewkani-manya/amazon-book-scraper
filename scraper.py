@@ -1,6 +1,7 @@
 # scraper.py
 # TODO:
 # - Update readme with all details about how you went through this project
+# - Clean up the output book name (fix get_text())
 
 #import libraries
 import requests
