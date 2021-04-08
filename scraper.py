@@ -14,4 +14,7 @@ soup=BeautifulSoup(response.content, "html.parser")
 print(soup.encode("utf-8"))
 
 # Take out the <div> of the name and get its value
-book_name_div= soup.find("div", attrs={'class':'p13n-sc-truncate'})
+book_name_divs= soup.find_all("div", attrs={'class':'p13n-sc-truncate'})
+
+for book_name in book_name_divs:
+    print(book_name.get_text())
